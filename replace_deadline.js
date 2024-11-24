@@ -16,7 +16,7 @@ obj.data.isoDeadline = newDeadline.toISOString(); // 格式化为 ISO 时间格�
 
 obj.data.quotaConsumed = "641563139";
 obj.data.expired = true;
-obj.data.userType = "1";
+obj.data.userType = "0";
 obj.data.trialDays = 100;
 
 body = JSON.stringify(obj);
