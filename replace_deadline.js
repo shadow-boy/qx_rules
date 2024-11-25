@@ -14,7 +14,7 @@ let newDeadline = addOneMonth(currentDate);
 obj.data.deadline = newDeadline.toISOString().replace('T', ' ').split('.')[0]; // 格式化为 "YYYY-MM-DD HH:mm:SS"
 obj.data.isoDeadline = newDeadline.toISOString(); // 格式化为 ISO 时间格式
 
-obj.data.quotaConsumed = "641563139";
+obj.data.quotaConsumed = "0";
 obj.data.expired = false;
 obj.data.userType = "0";
 obj.data.trialDays = 100;
