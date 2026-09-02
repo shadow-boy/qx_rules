@@ -1337,7 +1337,7 @@ DOMAIN-SUFFIX,afs.googlesyndication.com,REJECT
 DOMAIN-SUFFIX,afd.l.google.com,REJECT
 DOMAIN-SUFFIX,www.googleadservices.com,REJECT
 DOMAIN-SUFFIX,www.google-analytics.com,REJECT
-# [兼容版已禁用 YouTube] DOMAIN,ads.youtube.com,REJECT
+DOMAIN,ads.youtube.com,REJECT
 DOMAIN-SUFFIX,cmshow.gtimg.cn,REJECT
 DOMAIN-SUFFIX,discuz.gtimg.cn,REJECT
 DOMAIN-SUFFIX,gu.qlogo.cn,REJECT
@@ -7969,7 +7969,7 @@ https://.+\.gamersky.com/v1/statisticAd data-type=text data="{}" header="Content
 # > YouTube
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com
 # 播放页广告
-# [兼容版已禁用 YouTube] ^https:\/\/rr[\w-]+\.googlevideo\.com\/initplayback\? data-type=text data="{}" header="Content-Type:application/json"
+^https:\/\/rr[\w-]+\.googlevideo\.com\/initplayback\? data-type=text data="{}" header="Content-Type:application/json"
 
 # > 有兔阅读(米兔)
 # hostname = img.dailmo.com, img.allahall.com, app.zhoudamozi.com
@@ -8976,7 +8976,7 @@ usmile = type=http-response, pattern=^https?:\/\/www\.myusmile\.online\/user\/pl
 # > YouTube
 # hostname = rr*.googlevideo.com, youtubei.googleapis.com
 # 响应体
-# [兼容版已禁用 YouTube] YouTube响应体 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=60
+# [与模块1重复，兼容版已禁用] YouTube响应体 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch), script-path=https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=60
 
 # > 悠洗APP
 # hostname = api.ulife.group
